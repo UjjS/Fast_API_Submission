@@ -4,27 +4,30 @@ Simple API with JWT Authentication and Role-Based Access Control using FastAPI a
 
 ## Installation Steps
 
-
 1. (Recommended) Create and activate a virtual environment:
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
+
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
 
 2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 3. Setup PostgreSQL database:
-```bash
-createdb fastapi_rbac
-```
+
+    ```bash
+    createdb fastapi_rbac
+    ```
 
 4. Run the application (from the parent directory):
-```bash
-uvicorn fastapi_jwt_rbac.main:app --reload
-```
+
+    ```bash
+    uvicorn fastapi_jwt_rbac.main:app --reload
+    ```
 
 ## Endpoints
 
@@ -54,6 +57,7 @@ uvicorn fastapi_jwt_rbac.main:app --reload
 ## Usage
 
 The API implements:
+
 - User registration and login with bcrypt password hashing
 - JWT tokens with user ID and role information
 - Role-based access control (admin and user roles)
